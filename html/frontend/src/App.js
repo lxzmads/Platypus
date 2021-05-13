@@ -44,7 +44,7 @@ message.config({
 
 const { Header, Content, Sider } = Layout;
 
-let endPoint = window.location.host;
+let endPoint = window.location.host + window.location.pathname;
 let baseUrl = ["http://", endPoint].join("");
 let apiUrl = [baseUrl, "/api"].join("");
 let wsUrl = ["ws://", endPoint, "/notify"].join("");
